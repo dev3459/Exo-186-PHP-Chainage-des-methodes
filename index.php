@@ -12,3 +12,9 @@
  *
  * 5. Utilisez le chaînage des méthodes pour mettre à jour le nom et le prix en une seule ligne.
  */
+require 'VODService.php';
+
+$VODServ = new VODService;
+$VODServ->setName("Test")->setPrice("12");
+echo $VODServ->getName()."<br>";
+echo $VODServ->getPrice();
